@@ -14,6 +14,7 @@
   <div class="header-content">
     <img src="Img/logo_nt.png" alt="Logo Granja Avícola" class="logo" />
     <h1 class="site-title">Rey De Reyes S.A.S</h1>
+    <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
   </div>
   <nav class="navbar">
     <a href="Index.html">Inicio</a>
@@ -270,6 +271,14 @@
       scale = Math.min(Math.max(0.5, scale), 3);
       modalImage.style.transform = `rotate(${rotation}deg) scale(${scale})`;
     }
+    
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navbar = document.querySelector('.navbar');
+
+  menuToggle.addEventListener('click', () => {
+    navbar.classList.toggle('active');
+  });
+
   </script>
 </body>
 </html>
