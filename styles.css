@@ -173,10 +173,13 @@ body {
     text-align: left;
   }
 
-  .hero-image img {
-    max-width: 120px;
-    margin-top: 1.5rem;
-  }
+ .hero-image img {
+  max-width: 140px;
+  width: 100%;
+  height: auto;
+  margin: 1.5rem auto 0;
+  display: block;
+}
 
   .button {
     margin-top: 1rem;
